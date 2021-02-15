@@ -1,0 +1,8 @@
+<div>
+  <h1>Morte Rurale</h1>
+  <p>
+  <input type="text" #newquery>
+  <button class="material-icons" type="submit" (click)="submit(newquery)">search</button>
+  </p>
+  <google-chart *ngIf="LineChart.dataTable" [data]="LineChart"></google-chart>
+</div>
